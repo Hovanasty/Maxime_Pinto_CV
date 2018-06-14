@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Veille</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ veille.id }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{% if veille.date %}{{ veille.date|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ veille.titre }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ veille.description }}</td>
+            </tr>
+            <tr>
+                <th>Contenu</th>
+                <td>{{ veille.contenu }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('veille_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('veille_edit', { 'id': veille.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

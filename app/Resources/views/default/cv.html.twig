@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<!--
+    <h1>Hello cv</h1>
+    <h1>Passions list</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>intitule</th>
+            <th>entreprise</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for experience in experiences %}
+            <tr>
+                <td><a href="{{ path('experiences_show', { 'id': experiences.id }) }}">{{ experiences.id }}</a></td>
+                <td>{{ experiences.intitule }}</td>
+                <td>{{ experiences.entreprise }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('passions_show', { 'id': experiences.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('passions_edit', { 'id': experiences.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('experiences_new') }}">Create a new experiences</a>
+        </li>
+    </ul>
+
+{% endblock %}
+
+{% block stylesheets %}
+{% endblock %}
