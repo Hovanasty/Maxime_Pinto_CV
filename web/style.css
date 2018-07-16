@@ -105,10 +105,13 @@ Test
 
 .timeline {
     position: relative;
-    padding: 0;
-    margin-left: 150px;
+    margin-left: 200px;
     list-style: none;
-    border: 1px solid black;
+    margin-top: 1.5rem;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
 
 }
 
@@ -121,16 +124,6 @@ ul.timeline:before {
     position: absolute;
     left: -50px;
     top: -10px;
-
-    /*
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -4px;
-    width: 2px;
-    background-color: red;
-    content: '';
-    */
 }
 
 .timeline:after{
@@ -157,64 +150,62 @@ ul.timeline:before {
 span.number {height: 100%}
 span.number span{
     position: absolute;
-    left: -60px;
+    width: 150px;
+    right: 10px;
     font-weight: bold;
+    text-align: end;
 }
 span.number span:first-child { top: -16px; }
 span.number span:last-child { top: 97%; }
 
-/*
-ul.education {
-    margin: 20px 0 50px;
-    list-style: none;
-    position: relative;
-    padding: 0 0 0 50px;
+/* MY INTEREST */
+
+.interests li {
+    float: left;
     display: inline-block;
-    width: 100%;
+    padding: 50px 15px;
+    width: 30%;
+    text-align: center;
+    margin-right: 15px;
+    background: #fff;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
 }
+.interests li i { font-size: 34px; color: blue; margin-bottom: 15px; }
 
-ul.education li {
+.interests li:last-child { margin-right: 0; }
+
+.interests{
     position: relative;
-    margin-left: 30px;
-    background-color: #fbfbfb;
-    padding: 20px;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
+    margin-left: 200px;
 }
 
-/*******Margin entre les block***/
 /*
-ul.education li:not(:first-child) { margin-top: 60px; }
+.interests{
+    font-size: 30px;
+    color: #0000F0;
 
-/*******trait***/
-/*
-ul.education li > span {
-    width: 2px;
-    height: 100%;
-    background: #777777;
-    left: -30px; top: 0;
-    position: absolute;
 }
 
-/*******rond***/
-/*
-ul.education li > span:before, ul.education li > span:after { content: ""; width: 10px; height: 10px; border-radius: 90%; border: 2px solid #777777; position: absolute; left: -4px; top: -10px; }
+.interests > .card {
 
-/*******rond bas***/
-/*
-ul.education li span:after { top: 100%; }
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-right: 15px;
+    background: #fff;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+}
 
-/*div .type { font-weight: 600; font-size: 12px; }*/
-
-/*******chiffre***/
-/*
-span.number { height: 100%; }
-span.number span { position: absolute; left: -43px; font-weight: bold; }
-span.number span:first-child { top: -16px; }
-span.number span:last-child { top: 97%; }
+.aaa{
+    margin-left: 200px;
+}
+*/
 
 
 /*---------------------------------------------------------------------
@@ -228,12 +219,12 @@ span.number span:last-child { top: 97%; }
 
 
 }
-*/
+
 [class*="row"] {
 
     border: 2px solid black;
     border-radius: 6px;
 
 
-}
+}*/
 
